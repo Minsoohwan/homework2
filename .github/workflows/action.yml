@@ -28,8 +28,8 @@ jobs:
 
             - name: Deploy # S3에 배포하기
               env:
-                  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-                  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                  AWS_ACCESS_KEY_ID: AKIAYEJ6YH6T32L5A2HY
+                  AWS_SECRET_ACCESS_KEY: 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
               run: |
                   aws s3 cp \
                     --recursive \
