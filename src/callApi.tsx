@@ -1,7 +1,4 @@
 import axios from 'axios';
-
-import { FieldValues } from 'react-hook-form';
-
 import setupInterceptorsTo from './Interceptors';
 
 const baseApi = axios.create({
