@@ -72,8 +72,6 @@ const Main = () => {
                                     JSON.parse(localToken).tokenState,
                                 ) === v.userId ? (
                                     <CartTitleRight>
-                                        {/* <p>{time2str(v.date)}</p> */}
-
                                         <CardButton
                                             onClick={() => {
                                                 nav('/update/' + v.id, {
