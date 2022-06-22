@@ -44,7 +44,7 @@ function MyPage() {
     const [text, setText] = useState();
     //파일 미리볼 url을 저장해줄 state
     const [fileImage, setFileImage] = useState('');
-    const [file, setFile] = useState();
+    const [file, setFile] = useState('');
     // 파일 저장
     const saveFileImage = (e: any) => {
         setFileImage(URL.createObjectURL(e.target.files[0]));
@@ -55,6 +55,7 @@ function MyPage() {
     const deleteFileImage = () => {
         URL.revokeObjectURL(fileImage);
         setFileImage('');
+        setFile('');
     };
 
     return (

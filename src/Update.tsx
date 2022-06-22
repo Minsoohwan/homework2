@@ -55,7 +55,7 @@ function Update() {
     const [text, setText] = useState<string | any>(state.v.content);
     //파일 미리볼 url을 저장해줄 state
     const [fileImage, setFileImage] = useState(state.v.img_url);
-    const [file, setFile] = useState();
+    const [file, setFile] = useState('');
     // 파일 저장
     const saveFileImage = (e: any) => {
         setFileImage(URL.createObjectURL(e.target.files[0]));
@@ -66,6 +66,7 @@ function Update() {
     const deleteFileImage = () => {
         URL.revokeObjectURL(fileImage);
         setFileImage('');
+        setFile('');
     };
     return (
         <CardOutLine>
