@@ -35,6 +35,7 @@ const Main = () => {
             dispatch(addPost(data.data));
         },
     });
+    console.log(list_query);
     const myList = useSelector((state: RootState) => state.post.list);
     const dispatch = useDispatch();
 
