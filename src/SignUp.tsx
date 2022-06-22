@@ -68,8 +68,7 @@ const SignUp = () => {
     const { mutate } = useMutation(postSignUp);
     useEffect(() => {
         check();
-        //eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    });
     return (
         <OutLine>
             <State>
