@@ -40,7 +40,8 @@ const Login = () => {
         return axios
             .post('http://13.209.65.162/api/login', data)
             .then((res) => {
-                loginToken(res.data);
+                console.log(res.headers.authorization.split(' ')[1]);
+                loginToken(res.headers.authorization.split(' ')[1]);
                 nav('/');
             })
             .catch((err) => {

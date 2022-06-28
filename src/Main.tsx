@@ -116,7 +116,7 @@ const Main = () => {
                                             : 100
                                     }
                                 >
-                                    <Img src={v.img_url} />
+                                    <Img src={v.imgUrl} />
                                 </CardContent>
                             </CardLayoutDiv>
                             <CardTailDiv index={i} id_val={v.id} />

@@ -28,7 +28,7 @@ function Update() {
     interface Type {
         nickname: string;
         content: string;
-        img_url: string;
+        imgUrl: string;
         likes: number;
         heart: boolean;
         layoutType: number;
@@ -54,7 +54,7 @@ function Update() {
     };
     const [text, setText] = useState<string | any>(state.v.content);
     //파일 미리볼 url을 저장해줄 state
-    const [fileImage, setFileImage] = useState(state.v.img_url);
+    const [fileImage, setFileImage] = useState(state.v.imgUrl);
     const [file, setFile] = useState('');
     // 파일 저장
     const saveFileImage = (e: any) => {

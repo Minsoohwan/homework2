@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 interface Type {
     nickname: string;
     content: string;
-    img_url: string;
+    imgUrl: string;
     likes: [];
     layoutType: number;
     id: number;
